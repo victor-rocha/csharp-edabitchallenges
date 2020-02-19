@@ -1,5 +1,5 @@
 ﻿using System;
-namespace VeryEasy
+namespace EdabitChallenges.VeryEasy
 {
     // https://edabit.com/challenge/jRQSYLrcWLtxtYnx4
     public class AlphabetSoup

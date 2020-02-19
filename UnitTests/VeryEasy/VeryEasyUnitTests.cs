@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using VeryEasy;
+using EdabitChallenges.VeryEasy;
 
-namespace VeryEasy
+namespace UnitTests.VeryEasy
 {
     public class Tests
     {

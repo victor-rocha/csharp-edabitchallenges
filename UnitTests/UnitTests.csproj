@@ -15,6 +15,7 @@
   <ItemGroup>
     <Folder Include="VeryEasy\" />
     <Folder Include="Easy\" />
+    <Folder Include="Medium\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EdabitChallenges\EdabitChallenges.csproj" />

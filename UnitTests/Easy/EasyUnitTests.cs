@@ -45,5 +45,18 @@ namespace UnitTests.Easy
         [TestCase("MUSTARD", ExpectedResult = true)]
         public static bool CheckSameCaseTests(string str) => CheckSameCase.SameCase(str);
 
+        [Test]
+        [TestCase("String", ExpectedResult = "SSttrriinngg")]
+        [TestCase("Hello World!", ExpectedResult = "HHeelllloo  WWoorrlldd!!")]
+        [TestCase("1234!_ ", ExpectedResult = "11223344!!__  ")]
+        [TestCase("##^&%%*&%%$#@@!", ExpectedResult = "####^^&&%%%%**&&%%%%$$##@@@@!!")]
+        [TestCase("scandal", ExpectedResult = "ssccaannddaall")]
+        [TestCase("economics", ExpectedResult = "eeccoonnoommiiccss")]
+        [TestCase(" ", ExpectedResult = "  ")]
+        [TestCase("_______", ExpectedResult = "______________")]
+        [TestCase("equip gallon read", ExpectedResult = "eeqquuiipp  ggaalllloonn  rreeaadd")]
+        [TestCase("baby increase", ExpectedResult = "bbaabbyy  iinnccrreeaassee")]
+        public static string DoubleCharTests(string str) => DoubleChar.DoubleCharMethod(str);
+        
     }
 }

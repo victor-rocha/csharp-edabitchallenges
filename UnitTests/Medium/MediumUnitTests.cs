@@ -31,5 +31,23 @@ namespace UnitTests.Medium
         [TestCase("1234", ExpectedResult = "1234")]
         public static string MaskifyStringTests(string str) => MaskifyString.MaskifyStringMethod(str);
 
+        [Test]
+        [TestCase(1, true, ExpectedResult = false)]
+        [TestCase(0, "0", ExpectedResult = false)]
+        [TestCase(1, 1, ExpectedResult = true)]
+        [TestCase(true, true, ExpectedResult = true)]
+        [TestCase("nmv", "nmv", ExpectedResult = true)]
+        [TestCase(0, "", ExpectedResult = false)]
+        [TestCase(1, "1", ExpectedResult = false)]
+        [TestCase('h', 'm', ExpectedResult = false)]
+        [TestCase('a', 'a', ExpectedResult = true)]
+        [TestCase(0, false, ExpectedResult = false)]
+        [TestCase(1.0, 1.0, ExpectedResult = true)]
+        [TestCase("str", "rts", ExpectedResult = false)]
+        [TestCase('c', "test", ExpectedResult = false)]
+        [TestCase(true, "true", ExpectedResult = false)]
+        [TestCase(true, false, ExpectedResult = false)]
+        public static bool CheckEqualityTests(object a, object b) => CheckEquality.CheckEqualityMethod(a, b);
+
     }
 }

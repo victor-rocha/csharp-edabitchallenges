@@ -4,6 +4,7 @@ namespace EdabitChallenges.Medium
 {
     public class MaskifyString
     {
+        // https://edabit.com/challenge/RFeBL2TzSf7mRMNJi
         private const string CHAR_MASKED = "#";
         public static string MaskifyStringMethod(string str)
         {
